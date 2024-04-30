@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sp_Runner
+namespace Sp_Runner.Controllers
 {
     /**
      * https://es.stackoverflow.com/questions/299592/c%C3%B3mo-guardar-logs-en-un-archivo-de-texto-plano
@@ -45,7 +45,7 @@ namespace Sp_Runner
             if (DateTime.Now.Day == 1)
             {
                 tratarFicheroLog();
-            }            
+            }
 
             string path = getLogPath() + getLogFileName() + ".txt";
             StreamWriter stream = null;

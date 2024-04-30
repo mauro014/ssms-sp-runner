@@ -1,7 +1,7 @@
 ﻿using System.Configuration;
 using System.Data.SqlClient;
 
-namespace Sp_Runner
+namespace Sp_Runner.Controllers
 {
     internal class DbController
     {
@@ -36,7 +36,7 @@ namespace Sp_Runner
             }
             catch (Exception e)
             {
-                Utilities.printException(e);
+                Util.Utilities.printException(e);
                 return null;
             }
         }
@@ -45,7 +45,7 @@ namespace Sp_Runner
         {
             try
             {
-                Utilities.printMessage("START  -> " + name + " - TimeOut: " + timeOutSecons);
+                Util.Utilities.printMessage("START  -> " + name + " - TimeOut: " + timeOutSecons);
 
                 getDbConnectionSettings();
 
@@ -75,9 +75,9 @@ namespace Sp_Runner
             }
             catch (Exception e)
             {
-                Utilities.printException(e);
+                Util.Utilities.printException(e);
             }
-            Utilities.printMessage("FINISH -> " + name);
+            Util.Utilities.printMessage("FINISH -> " + name);
 
         }
     }

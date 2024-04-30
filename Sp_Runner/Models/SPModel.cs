@@ -1,4 +1,4 @@
-﻿namespace Sp_Runner
+﻿namespace Sp_Runner.Models
 {
     internal class SPModel
     {

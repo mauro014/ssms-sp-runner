@@ -1,6 +1,7 @@
 ﻿using System.Configuration;
+using Sp_Runner.Controllers;
 
-namespace Sp_Runner
+namespace Sp_Runner.Util
 {
 
     internal class Utilities
@@ -22,7 +23,8 @@ namespace Sp_Runner
         public static void printException(Exception e)
         {
             printMessage(e.Message);
-            if(e.StackTrace != null) { 
+            if (e.StackTrace != null)
+            {
                 printMessage(e.StackTrace);
             }
         }
