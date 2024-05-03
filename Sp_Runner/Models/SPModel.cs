@@ -2,7 +2,7 @@
 {
     internal class SPModel
     {
-        public string? Nombre { get; set; }
+        public string? Name { get; set; }
         public int TimeOut { get; set; }
         public string? nPar0 { get; set; }
         public string? vPar0 { get; set; }
