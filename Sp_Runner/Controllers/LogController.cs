@@ -52,7 +52,7 @@ namespace Sp_Runner.Controllers
             try
             {
                 stream = File.AppendText(path);
-                stream.WriteLine(string.Format("{0}.", message));
+                stream.WriteLine(string.Format("{0} {1}.", DateTime.Now.ToShortDateString(), message));
             }
             catch (Exception ex)
             {
